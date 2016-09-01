@@ -18,8 +18,8 @@ def scrape():
 	# Link to the Owen's menu website.
 	URL = "http://foodpro.dsa.vt.edu/FoodPro.NET/shortmenu.aspx?sName=Virginia+Tech+Dining+Services&locationNum=09&locationName=FOOD+CRT%2f+HOKIE+GRILL+AT+OWENS+&naFlag=1"
 	
-    # Gather HTML from the URL.
-    response = requests.get(URL)
+    	# Gather HTML from the URL.
+    	response = requests.get(URL)
 	html = response.content
 
 	# Run the HTML content through BeautifulSoup
