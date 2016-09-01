@@ -2,16 +2,17 @@
 ##########################################################
 # Chicken Parmesan Checker
 #
+# Author:
+# 	Alexander DeRieux
+#
 # Description:
 # 	Curious if it's chicken parmesan day at Owen's?
 # 	Well, this tool is for you! This tool will check
 # 	the current date and then tell you if it is chicken
 # 	parmesan day.
-#
 ##########################################################
 import requests
 from BeautifulSoup import BeautifulSoup
-
 
 def scrape():
 
