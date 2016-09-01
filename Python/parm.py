@@ -13,12 +13,13 @@ import requests
 from BeautifulSoup import BeautifulSoup
 
 
-def parm():
+def scrape():
 
 	# Link to the Owen's menu website.
 	URL = "http://foodpro.dsa.vt.edu/FoodPro.NET/shortmenu.aspx?sName=Virginia+Tech+Dining+Services&locationNum=09&locationName=FOOD+CRT%2f+HOKIE+GRILL+AT+OWENS+&naFlag=1"
-	# "http://foodpro.dsa.vt.edu/FoodPro.NET/shortmenu.aspx?sName=Virginia+Tech+Dining+Services&locationNum=09&locationName=FOOD+CRT%2f+HOKIE+GRILL+AT+OWENS+&naFlag=1&WeeksMenus=This+Week%27s+Menus&myaction=read&dtdate=8%2f30%2f2016"
-	response = requests.get(URL)
+	
+    # Gather HTML from the URL.
+    response = requests.get(URL)
 	html = response.content
 
 	# Run the HTML content through BeautifulSoup
@@ -43,4 +44,4 @@ def parm():
 	return False
 
 if __name__ == "__main__":
-	parm()
+	scrape()
